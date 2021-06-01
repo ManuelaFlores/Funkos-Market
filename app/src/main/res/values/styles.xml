@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/main_title_color</item>
+    </style>
+
+    <style name="SecondaryTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/main_title_color</item>
+    </style>
+
+    <style name="MainHint" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/main_hint_text_color</item>
+        <item name="android:background">@drawable/rounded_white_shape</item>
+    </style>
+</resources>

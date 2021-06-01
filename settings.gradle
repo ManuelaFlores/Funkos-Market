@@ -1,0 +1,2 @@
+rootProject.name = "Manu Market"
+include ':app'

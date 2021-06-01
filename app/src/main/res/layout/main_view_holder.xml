@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/main_view_holder_width"
+    android:layout_height="@dimen/main_view_holder_height"
+    android:layout_margin="@dimen/main_view_holder_margin"
+    android:background="@drawable/rounded_white_shape"
+    android:elevation="@dimen/main_view_holder_elevation"
+    android:padding="@dimen/main_view_holder_padding"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/funko1"
+        app:layout_constraintBottom_toTopOf="@id/mainDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_view_holder_description_margin"
+        android:layout_marginBottom="@dimen/main_view_holder_description_margin"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImageView"
+        tools:text="Funko Pop! Star Wars: The Mandalorian - The Child" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

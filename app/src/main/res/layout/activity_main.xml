@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context="com.manuflowers.funkosmarket.ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/main_padding">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mainTitle"
+            style="@style/MainTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_margin"
+            android:text="@string/main_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mainSearchTextView"
+            style="@style/MainHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_search_margin"
+            android:layout_marginTop="@dimen/main_search_margin_top"
+            android:layout_marginEnd="@dimen/main_search_margin"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/main_search_drawable_padding"
+            android:elevation="@dimen/main_search_elevation"
+            android:gravity="center_vertical"
+            android:padding="@dimen/main_search_padding"
+            android:text="@string/search_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bannerContainerCardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_banner_height"
+            android:layout_marginTop="@dimen/main_banner_margin"
+            android:elevation="@dimen/main_banner_elevation"
+            app:cardCornerRadius="@dimen/main_banner_corners"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainSearchTextView">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue_300" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/lisTitleTextView"
+            style="@style/SecondaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:text="@string/main_list_description"
+            app:layout_constraintBottom_toTopOf="@+id/mainRecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerContainerCardView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lisTitleTextView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:itemCount="10"
+            tools:listitem="@layout/main_view_holder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

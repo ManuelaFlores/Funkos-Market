@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_padding">8dp</dimen>
+    <dimen name="main_margin">8dp</dimen>
+    <dimen name="main_banner_elevation">10dp</dimen>
+    <dimen name="main_banner_corners">10dp</dimen>
+    <dimen name="main_banner_height">150dp</dimen>
+    <dimen name="main_banner_margin">16dp</dimen>
+    <dimen name="main_search_margin">4dp</dimen>
+    <dimen name="main_search_margin_top">24dp</dimen>
+    <dimen name="main_search_padding">16dp</dimen>
+    <dimen name="main_search_elevation">6dp</dimen>
+    <dimen name="main_search_drawable_padding">8dp</dimen>
+
+    <dimen name="main_view_holder_height">260dp</dimen>
+    <dimen name="main_view_holder_width">220dp</dimen>
+    <dimen name="main_view_holder_padding">8dp</dimen>
+    <dimen name="main_view_holder_margin">8dp</dimen>
+    <dimen name="main_view_holder_elevation">2dp</dimen>
+    <dimen name="main_view_holder_description_margin">16dp</dimen>
+</resources>
